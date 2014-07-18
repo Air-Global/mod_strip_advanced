@@ -1,0 +1,50 @@
+.strip.dark {
+  background-color: hsl(0, 0%, 19%);
+}
+
+.strip.dark .bottom {
+  background-color: hsl(0, 0%, 0%);
+}
+
+.strip.dark .command {
+  color: hsl(0, 0%, 70%);
+}
+
+.strip.dark .box {
+  background-color: hsl(0, 0%, 10%);
+  border-bottom: 5px solid hsl(0, 0%, 0%);
+  border-top: 5px solid hsl(0, 0%, 10%);
+}
+
+.strip.dark .tabs .tab {
+  color: white;
+}
+
+.strip.dark .tabs .tab > div.loading {
+  background-color: hsl(0, 0%, 0%);
+}
+
+.strip.dark .tabs .tab > div.back-loading {
+  background-color: hsl(0, 0%, 35%);
+}
+
+.strip.dark .tabs .tab.active > div.loading {
+  background-color: hsl(0, 0%, 35%);
+}
+
+.strip.dark .tabs .tab > div.content .shadow {
+  box-shadow: inset -6px 0px 6px hsl(0, 0%, 19%);
+}
+
+.strip.dark .tabs .tab > div.content .title {
+  color: hsl(0, 0%, 70%);
+}
+
+.strip.dark .tabs .tab.active > div.content .title {
+  color: hsl(0, 0%, 100%);
+}
+
+.strip.dark .tabs .tab > div.close {
+  color: hsl(0, 0%, 40%);
+}
+

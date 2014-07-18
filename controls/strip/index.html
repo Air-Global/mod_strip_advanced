@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/lib/normalize-3.0.1.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/css/fonts.css"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="strip.css"/>
+    <link rel="stylesheet" href="strip.dark.css"/>
+    <link rel="stylesheet" href="strip.light.css"/>
+  </head>
+
+  <body>
+    <!-- The strip -->
+    <div class="strip light">
+      <div class="bottom"></div>
+      <div class="command back" onclick="strip.cmd_back()">
+        <div class="icon">
+          <span class="icon-iconfont-05"></span>
+        </div>
+      </div>
+      <div class="command forward" onclick="strip.cmd_forward()">
+        <div class="icon">
+          <span class="icon-iconfont-06"></span>
+        </div>
+      </div>
+      <div class="box">
+        <iframe src="/box" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="command new" onclick="strip.cmd_new()">
+        <div class="icon">
+          <span class="icon-iconfont-02"></span>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="tabs">
+        </div>
+      </div>
+      <div class="command update" onclick="strip.cmd_update()">
+        <div class="fa-icon">
+          <i class="fa fa-exclamation-circle"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/jquery-2.1.1.min.js"></script>
+    <script src="/lib/tinySHA1-r4.js"></script>
+
+    <!-- Tools -->
+    <script src="color.js"></script>
+    <!-- Controllers -->
+    <script src="strip_c.js"></script>
+
+    <!-- Main -->
+    <script type="text/javascript">
+      var strip = strip_c({ strip_el: $('.strip') }).init();
+    </script>
+  </body>
+</html>
+
+

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/lib/normalize-3.0.1.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/css/fonts.css"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="box.css"/>
+    <link rel="stylesheet" href="box.dark.css"/>
+    <link rel="stylesheet" href="box.light.css"/>
+  </head>
+
+  <body>
+    <!-- The box -->
+    <div class="box light">
+      <div class="ssl">
+        <div class="icon">
+          <span class="icon-iconfont-09"></span>
+        </div>
+      </div>
+      <div class="search">
+        <div class="icon">
+          <span class="icon-iconfont-08"></span>
+        </div>
+      </div>
+      <div class="input">
+        <div class="shadow"></div>
+        <div class="glass">
+          <span class="host"></span>
+          <span class="path"></span>
+          <span class="hash"></span>
+        </div>
+        <form>
+          <input>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/jquery-2.1.1.min.js"></script>
+
+    <!-- Controllers -->
+    <script src="box_c.js"></script>
+
+    <!-- Main -->
+    <script type="text/javascript">
+      var box = box_c({ box_el: $('.box') }).init();
+    </script>
+  </body>
+</html>
+
+
